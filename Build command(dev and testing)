@@ -1,0 +1,44 @@
+Here is the build command for your reference. 
+Build command: 
+testing:10.225.10.29 
+password:rootiot@123!
+node --max_old_space_size=51192 ./node_modules/@angular/cli/bin/ng build --configuration=testing --base-href=. --localize 
+ 
+dev:10.225.10.23 
+password:rootiot@123!
+node --max_old_space_size=51192 ./node_modules/@angular/cli/bin/ng build --configuration=dev --base-href=. --localize 
+ 
+Hereby I am mentioning the projects need to checkout, 
+                1.Empyreal universe 
+                2.Eu-login 
+                3.Street-light 
+                4.street-light-login 
+                5.layout 
+                6.analytic management 
+                7.street-light-analytic management 
+                8.asset management 
+                9.gateway management 
+                10.street-light-asset. 
+                11.alarm management 
+                12.street-light map 
+                13.user management 
+                14.data simulator 
+                15.master data management 
+                16.protocol management 
+                17.logger management 
+                18.device data writer 
+
+1.Check out the project.
+2.Open the terminal within the project directory.
+3.Install npm (Node Package Manager).
+** If you encounter an error related to "global": "file:global-0.0.4.tgz" in the package.json file, delete the line "global": "file:global-0.0.4.tgz" and then proceed to install the required node modules again.
+4.After removing the line, save the changes to the package.json file.
+** If the "global": "file:global-0.0.4.tgz" reappears after saving the changes, repeat step 3 (delete the line) and install the node modules once more.
+5.Once the node modules are successfully installed, the project is now ready to be built.
+6.Use the build command to build the project. The build artifacts will be generated and can be found under the "dist" folder.
+
+
+Deployment:
+1. Start the server.
+2.Delete the existing build artifacts.
+3.Now, you can deploy the new artifacts by dragging and dropping them into the appropriate location.

@@ -1,0 +1,112 @@
+table name  : be_asset_standard_tag
+ 
+For HTTP :
+ 
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'TEMP','Temperature','Temperature',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'HUM','Humidity','Humidity',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'PDU1','PDU 1','PDU 1',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'PDU2','PDU 2','PDU 2',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'GATEWAYPOWER','Gateway Power','Gateway Power',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'BATTERY','Battery','Battery',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'DOOR','Door Status','Door Status',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'WATERLEAKAGE','Water Leakage','Water Leakage',NULL,'A');
+ 
+ 
+For MQTT:
+ 
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'LIGHT','Light Status',3,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'ENERGY','Total Energy',4,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_VOLTAGE','R Phase Voltage',7,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_VOLTAGE','Y Phase Voltage',8,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_VOLTAGE','B Phase Voltage',9,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_CURRENT','R Phase Current',10,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_CURRENT','Y Phase Current',11,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_CURRENT','B Phase Current',12,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'TOTAL_CURRENT','Total Current',13,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_POWER_FACTOR','R Phase Power Factor',14,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_POWER_FACTOR','Y Phase Power Factor',15,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_POWER_FACTOR','B Phase Power Factor',16,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag));
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'FREQUENCY','Frequency',18,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_AVERAGE_CURRENT','R Phase Average Current',19,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_AVERAGE_CURRENT','Y Phase Average Current',20,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_AVERAGE_CURRENT','B Phase Average Current',21,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_MAXIMUM_CURRENT','R Phase Maximum Current',22,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_MAXIMUM_CURRENT','Y Phase Maximum Current',23,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_MAXIMUM_CURRENT','B Phase Maximum Current',24,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_ACTIVE_POWER','R Phase Active Power',25,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_ACTIVE_POWER','Y Phase Active Power',26,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_ACTIVE_POWER','B Phase Active Power',27,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_APPARENT_POWER','R Phase Apparent Power',28,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_APPARENT_POWER','Y Phase Apparent Power',29,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_APPARENT_POWER','B Phase Apparent Power',30,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'R_PHASE_REACTIVE_POWER','R Phase Reactive Power',31,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'Y_PHASE_REACTIVE_POWER','Y Phase Reactive Power',32,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'B_PHASE_REACTIVE_POWER','B Phase Reactive Power',33,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'TOTAL_ACTIVE_POWER','Total Active Power',34,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'TOTAL_APPARENT_POWER','Total Apparent Power',35,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'TOTAL_REACTIVE_POWER','Total Reactive Power',36,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'AVERAGE_VALUE_ACTIVE_POWER','Average Value Active Power',37,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'AVERAGE_VALUE_APPARENT_POWER','Average Value Apparent Power',38,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'AVERAGE_VALUE_REACTIVE_POWER','Average Value Reactive Power',39,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'MAXIMUM_VALUE_ACTIVE_POWER','Maximum Value Active Power',40,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'MAXIMUM_VALUE_APPARENT_POWER','Maximum Value Apparent Power',41,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'MAXIMUM_VALUE_REACTIVE_POWER','Maximum Value Reactive Power',42,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'RUN_HOUR','Run Hour',43,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'TEMPERATURE','Temperature',44,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'HUMIDITY','Humidity',45,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'POWER_STATUS','Power Status',6,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),372,'DOOR','Door Status',5,'A');
+ 
+For TCP:
+ 
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),1,LAT,'Latitude','NULL',1,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),1,LONG,'Longitude','NULL',2,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'TEMP','Temperature','Temperature',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'HUM','Humidity','Humidity',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'PDU1','PDU 1','PDU 1',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'PDU2','PDU 2','PDU 2',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'GATEWAYPOWER','Gateway Power','Gateway Power',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'BATTERY','Battery','Battery',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'DOOR','Door Status','Door Status',NULL,'A');
+INSERT INTO be_asset_standard_tag(id,business_entity_id,code,name,description,asset_standard_tag_id,status)VALUES ((select max(id)+1 from be_asset_standard_tag),374,'WATERLEAKAGE','Water Leakage','Water Leakage',NULL,'A');
+ 
+ 
+ 
+Table Name : asset_type
+ 
+MQTT:
+ 
+For - REGION->SITE->SLP
+ 
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES ((select max(id)+1 from asset_type),373,1,'REGION','Region','TRUE','A',NULL,1);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES ((select max(id)+1 from asset_type),373,1,'SITE','Site','TRUE','A',23,2);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES ((select max(id)+1 from asset_type),373,2,'SLP','SLP','TRUE','A',24,3);
+ 
+REGION->SITE->STREET->SLP
+ 
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'REGION','Region','TRUE','A',NULL,1);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'SITE','Site','TRUE','A',73,2);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'STREET','Street','TRUE','A',74,3);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,2,'SLP','SLP','TRUE','A',75,4);
+ 
+ 
+REGION->SITE->STREET->SUB-STREET->SLP
+ 
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'REGION','Region','TRUE','A',NULL,1);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'SITE','Site','TRUE','A',73,2);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'STREET','Street','TRUE','A',74,3);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,1,'SUB-STREET','SubStreet','TRUE','A',75,4);
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status,ref_asset_type_id,display_order)VALUES((select max(id)+1 from asset_type),435,2,'SLP','SLP','TRUE','A',76,5);
+ 
+ 
+HTTP:
+ 
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status)VALUES ((select max(id)+1 from asset_type),374,1,'BUL','Building','FALSE','A');
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status)VALUES ((select max(id)+1 from asset_type),374,1,'FLOOR','Floor','FALSE','A');
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status)VALUES ((select max(id)+1 from asset_type),374,1,'ITR','IT Room','FALSE','A');
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status)VALUES ((select max(id)+1 from asset_type),374,1,'DCR','DC Room','FALSE','A');
+INSERT INTO asset_type(id,business_entity_id,asset_category_id,code,name,is_generic,status)VALUES ((select max(id)+1 from asset_type),374,2,'RACK','Rack','FALSE','A');
+ 
+ 
+has context menu
